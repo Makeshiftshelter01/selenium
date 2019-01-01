@@ -16,10 +16,10 @@ cd = CrwalingDAO() #현재는 mongoDB
 
 #sw =selenium_WebCrawler()
 
-#cr.selenium_lowerpage(target = 'inven', coll = 'inven_test')
+cr.selenium_lowerpage(target = 'clien', coll = 'clien_test')
 
 #혹여나 에러가 나서 모든 항목이 fillblanks일 때를 고치는 함수
-cr.selenium_fixerrors(target = 'inven', coll = 'inven_test')
+#cr.selenium_fixerrors(target = 'clien', coll = 'clien_test')
 
 
 # 프로그램 종료 측정 및 결과 출력

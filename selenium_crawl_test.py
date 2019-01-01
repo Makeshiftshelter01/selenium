@@ -8,22 +8,24 @@ import lxml.html
 from lxml import etree
 import cssselect
 import collections
+
 # 딜레이
 from time import sleep
 # 시간측정
 import time
+
 # 셀레니움
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
+
 # os 확인용
 import platform
-
 import pickle
 import os
 
 # 데이터 가져오기
 from ruri_dao import CrwalingDAO
-from get_half_element import getElement
+
 
 #언론사 구분
 from news_company import News_company
