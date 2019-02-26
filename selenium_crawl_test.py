@@ -279,7 +279,7 @@ class selenium_WebCrawler:
         return contents_part_list
 
     # 페이지를 설정할 수 있게 옵션 선택
-    def selenium_upperpage_only(self, lastpage, cvalues, pagetype):  # 역시 여기서도 pagetype 설정 추가
+    def selenium_upperpage_only(self, start_page, lastpage, cvalues, pagetype):  # 역시 여기서도 pagetype 설정 추가
         ### 크롤링 시간측정 시작 ####
         start_time = time.time()
         u_time = None
@@ -298,7 +298,7 @@ class selenium_WebCrawler:
         #################################
         # 1. upper page - 상단 페이지 실행
         
-        for dummy_page in range(1, int(lastpage)+1):
+        for dummy_page in range(start_page, int(lastpage)+1):
             print(dummy_page, '번째 페이지 시작!')
             self.cr_upperpages(url, headers, dummy_page, keyvalues, start_time, pagetype)
             u_time = time.time()

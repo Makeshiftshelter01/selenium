@@ -21,13 +21,13 @@ class Crawling:
 
   
     #셀레니움 크롤링
-    def selenium_upperpage(self, target, lastpage, pagetype ='page'):
+    def selenium_upperpage(self,start_page, target, lastpage, pagetype ='page'):
         ##### 세팅 정보
         ctargetdata = self.setcsstags(target) #크롤링 하기 위한 타겟 사이트의 필수 데이터 호출
         
         ##### 실행 및 결과 호출
         sw = selenium_WebCrawler() #웹 크롤러 기능 활성화
-        sw.selenium_upperpage_only(lastpage, ctargetdata, pagetype) #크롤링 실행 및 결과를 변수에 담음
+        sw.selenium_upperpage_only(start_page, lastpage, ctargetdata, pagetype) #크롤링 실행 및 결과를 변수에 담음
         #return result
 
     def selenium_lowerpage(self, coll, target):
